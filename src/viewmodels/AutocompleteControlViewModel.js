@@ -1,5 +1,5 @@
-import { makeAutoObservable, runInAction } from 'mobx';
-import { getCountryByName } from '../services/apiService';
+import {makeAutoObservable, runInAction} from 'mobx';
+import {getCountryByName} from '../services/apiService';
 
 class AutocompleteControlViewModel {
     text = '';

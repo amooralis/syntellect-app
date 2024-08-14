@@ -1,8 +1,8 @@
 import React from 'react';
-import { observer } from 'mobx-react';
+import {observer} from 'mobx-react';
 import '../styles.css';
 
-const AutocompleteControl = observer(({ viewModel }) => {
+const AutocompleteControl = observer(({viewModel}) => {
     return (
         <div className="autocomplete-container">
             <input
@@ -16,7 +16,7 @@ const AutocompleteControl = observer(({ viewModel }) => {
                         <li className="suggestion"
                             key={index}
                             onClick={() => viewModel.onSuggestionClick(suggestion)}>
-                            {suggestion.flag ? <img src={suggestion.flag}/>: <></>}
+                            {suggestion.flag ? <img src={suggestion.flag}/> : <></>}
                             {suggestion.name} - {suggestion.fullName}
                         </li>
                     ))}

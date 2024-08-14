@@ -1,8 +1,8 @@
 import React from 'react';
-import { observer } from 'mobx-react';
+import {observer} from 'mobx-react';
 import '../styles.css';
 
-const ButtonControl = observer(({ viewModel }) => {
+const ButtonControl = observer(({viewModel}) => {
     return (
         <div className="control-container">
             {viewModel.leftButtons.map((button, index) => (
